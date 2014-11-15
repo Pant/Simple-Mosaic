@@ -1,0 +1,197 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+body{                       /* General Setup on the body*/
+  margin: 0px;
+  padding:0px;
+  width:100%;
+}
+#playground{                /* This is the Parrent of #mosaic*/
+  width:1035px;             /* remove this if you declare the width from the js*/
+  margin:0 auto;            /* To be in the center of the screen*/
+}
+#mosaic{                    /* This is the div where the images will be in */
+  -webkit-column-gap: 0px;  /* Zeroing the gap of the columns*/
+  -moz-column-gap: 0px;     /* Zeroing the gap of the columns*/
+  column-gap: 0px;          /* Zeroing the gap of the columns*/
+}
+#mosaic img{                /* Selecting the images */
+  width:100px;              /* Setting the width of images */
+  display: block;           /* To prevent space on the bottom of every image */
+  margin:0px;
+  padding:0px;
+}
+/*
+#debug{
+ border-top:1px solid black;
+}
+*/
+</style> 
+<script type="text/javascript">
+function mosaic(){
+  //console.log("Debug starts"); //For Debuging
+  var imageWidth= 100; //Set the fixed number of width of the pictures
+  var divWidth = 1035; //Set the fixed number of the div "playground"
+  var columns = Math.floor( divWidth / imageWidth );//Divide the width of playground with image width to get how many columns we will have 
+
+  //document.getElementById("playground").style.width= divWidth; //This if you want to declare the width with js. Maybe for testing or something.
+
+    //Setting the style at mosaic.
+    document.getElementById("mosaic").style.WebkitColumns = imageWidth + "px " + columns;
+    document.getElementById("mosaic").style.MozColumns = imageWidth + "px " + columns; 
+    document.getElementById("mosaic").style.columns= imageWidth + "px " + columns;
+    document.getElementById("mosaic").style.padding= 0 +"px " +  ((divWidth -(columns * imageWidth))/2) +"px" ; //This used for eliminating the space left and right from the images in cases the divWidth / imageWidth quotient isnt and interger.
+
+/* For debuging Purposes (Advise" you may want to uncomment #debug id from css too)
+  document.getElementById("DdivWidth").innerHTML= "width: "+ divWidth;
+  document.getElementById("Dcolumns").innerHTML= "Columns: "+ columns;
+  document.getElementById("DcolumnsStyle").innerHTML= imageWidth + "px " + columns;
+  document.getElementById("DpaddingLR").innerHTML= (divWidth -(columns * imageWidth))/2;
+*/
+
+}
+
+</script>
+</head>
+<body onload="mosaic()">
+  <div id="playground">
+    <div id="mosaic">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+      <img src="0001.jpg">
+      <img src="0002.jpg">
+      <img src="0003.jpg">
+      <img src="0004.jpg">
+      <img src="0005.jpg">
+      <img src="0006.jpg">
+      <img src="0007.jpg">
+      <img src="0008.jpg">
+      <img src="0009.jpg">
+    </div>
+  </div>
+  <div id="debug">
+    <p> Hi this is debug</p>
+      <span id="DplaygroundWidthσ"></span></br>
+      <span id="Dcolumns"></span></br>
+      <span id="DcolumnsStyle"></span></br>
+      <span id="DpaddingLR"></span>
+  </div>
+</body>
+</html>
