@@ -19,6 +19,8 @@ Example of images:
 
 4__8__12__16
 
+![Alt text](http://s14.postimg.org/yfcdpqpsh/mosaic.jpg "Optional Title")
+
 There are a few requirements - limits though:
 
 1. Fixed width of pictures. The image will get smaller in order to fit in the given width.
